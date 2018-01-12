@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @user_list.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @user_list.lastname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user_list.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user_list.password %>
+</p>
+
+<%= link_to 'Edit', edit_user_list_path(@user_list) %> |
+<%= link_to 'Back', user_lists_path %>
