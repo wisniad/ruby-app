@@ -1,4 +1,5 @@
 class UserListsController < ApplicationController
+  before_action :require_user, only: [:index, :show]
   before_action :set_user_list, only: [:show, :edit, :update, :destroy]
 
   # GET /user_lists

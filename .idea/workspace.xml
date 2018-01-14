@@ -2,12 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5c60cfb-b538-4df1-bafa-e2d786d803e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/damia.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ruby-app2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/App/app/assets/stylesheets/application.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/assets/javascripts/sessions.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/assets/javascripts/users.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/assets/stylesheets/application.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/assets/stylesheets/sessions.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/assets/stylesheets/users.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/controllers/sessions_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/controllers/users_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/helpers/sessions_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/helpers/users_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/models/user.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/views/sessions/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/views/users/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/app/views/users/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/db/migrate/20180113180455_create_users.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/test/controllers/sessions_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/test/controllers/users_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/test/fixtures/users.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/test/models/user_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Gemfile" afterPath="$PROJECT_DIR$/App/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Gemfile.lock" afterPath="$PROJECT_DIR$/App/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/app/assets/stylesheets/scaffolds.scss" afterPath="$PROJECT_DIR$/App/app/assets/stylesheets/scaffolds.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/App/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/app/controllers/user_lists_controller.rb" afterPath="$PROJECT_DIR$/App/app/controllers/user_lists_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/App/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/app/views/user_lists/index.html.erb" afterPath="$PROJECT_DIR$/App/app/views/user_lists/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/app/views/user_lists/new.html.erb" afterPath="$PROJECT_DIR$/App/app/views/user_lists/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/config/routes.rb" afterPath="$PROJECT_DIR$/App/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/db/schema.rb" afterPath="$PROJECT_DIR$/App/db/schema.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/app/assets/stylesheets/application.css">
+      <file leaf-file-name="application.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/app/assets/stylesheets/application.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="156" column="29" lean-forward="true" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
+            <state relative-caret-position="286">
+              <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,12 +182,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515924788317</updated>
-      <workItem from="1515924790190" duration="1306000" />
+      <workItem from="1515924790190" duration="1466000" />
     </task>
+    <task id="LOCAL-00001" summary="- CSS added">
+      <created>1515929165192</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1515929165192</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1306000" />
+    <option name="totallyTimeSpent" value="1466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="94" y="26" width="1654" height="989" extended-state="0" />
@@ -194,6 +225,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- CSS added" />
+    <MESSAGE value="- fixed last commit, CSS added project works&#10;- authentication implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixed last commit, CSS added project works&#10;- authentication implemented" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -201,8 +237,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/App/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="156" column="29" lean-forward="true" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
+        <state relative-caret-position="232">
+          <caret line="160" column="24" lean-forward="true" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
           <folding />
         </state>
       </provider>
